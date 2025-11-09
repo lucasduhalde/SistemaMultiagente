@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-core
+langchain-community
+openai
+faiss-cpu
+python-dotenv
+python-telegram-bot
+nest-asyncio
+
+langchain-xai
