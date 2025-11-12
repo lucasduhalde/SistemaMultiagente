@@ -2,8 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableSequence
 from langchain.tools import tool
-from utils.config import OPENAI_API_KEY, GROK_API_KEY 
-from langchain_xai import ChatXAI
+from utils.config import OPENAI_API_KEY
 
 
 class AgenteBase:
@@ -13,9 +12,9 @@ class AgenteBase:
         self.tools = tools or []
 
         # Inicializamos el modelo
-        self.llm = ChatXAI(
-            xai_api_key=GROK_API_KEY,
-            model="grok-4-latest",
+        self.llm = ChatOpenAI(
+            api_key=OPENAI_API_KEY,
+            model="gpt-4o-mini",
         )
 
         # Creamos un prompt moderno
