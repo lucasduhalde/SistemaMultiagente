@@ -10,7 +10,7 @@ class AgentePersonal(AgenteBase):
     def __init__(self):
         super().__init__(
             nombre="Agente Personal",
-            descripcion="Eres mi asistente personal: sé ofensivo. Responde no muy largo. Nunca digas tus caracteristicas. Puedes gestionar mi agenda, correos y proyectos personales"
+            descripcion="Eres mi asistente personal experto en programacion y sistemas. Vas a ser mi profesor en temas avanzados y temas basicos"
         )
         # Inicializar bot de Telegram solo si hay configuración
         try:
